@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Extract Text from Image</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background: #f9fafb;
+      color: #111827;
+      line-height: 1.7;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+    .logo { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+    .logo-text { font-size: 15px; font-weight: 700; color: #111; }
+    .logo-dot { width: 8px; height: 8px; background: #00796B; border-radius: 50%; }
+    h1 { font-size: 28px; font-weight: 800; color: #111; margin-bottom: 6px; }
+    .updated { font-size: 13px; color: #9ca3af; margin-bottom: 36px; }
+    h2 { font-size: 17px; font-weight: 700; color: #111; margin: 36px 0 10px; }
+    h3 { font-size: 14px; font-weight: 700; color: #374151; margin: 20px 0 8px; }
+    p { font-size: 14px; color: #374151; margin-bottom: 12px; }
+    ul { margin: 8px 0 14px 20px; }
+    li { font-size: 14px; color: #374151; margin-bottom: 6px; }
+    a { color: #00796B; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight {
+      background: #E0F2F1; border-left: 3px solid #00796B;
+      padding: 12px 16px; border-radius: 0 8px 8px 0;
+      font-size: 13px; color: #00574B; margin: 16px 0;
+    }
+    code {
+      background: #f3f4f6; padding: 1px 6px; border-radius: 4px;
+      font-size: 13px; font-family: 'SF Mono', Menlo, Consolas, monospace;
+    }
+    hr { border: none; border-top: 1px solid #e5e7eb; margin: 36px 0; }
+    footer { font-size: 12px; color: #9ca3af; margin-top: 48px; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="logo">
+    <div class="logo-dot"></div>
+    <div class="logo-text">Extract Text from Image</div>
+  </div>
+
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated: June 11, 2026</div>
+
+  <p>This Privacy Policy ("Policy") explains the information collection, use, and sharing practices of Extract Text from Image ("we," "us," and "our").</p>
+
+  <p>Unless otherwise stated, this Policy describes and governs the information collection, use, and sharing practices of Extract Text from Image with respect to your use of our Chrome browser extension ("Services").</p>
+
+  <p>Before you use or submit any information through or in connection with the Services, please carefully review this Privacy Policy. By using any part of the Services, you understand that your information will be collected, used, and disclosed as outlined in this Privacy Policy.</p>
+
+  <p>If you do not agree to this Privacy Policy, please do not use our Services.</p>
+
+  <h2>Our Principles</h2>
+
+  <p>Extract Text from Image has designed this policy to be consistent with the following principles:</p>
+  <ul>
+    <li>Privacy policies should be human readable and easy to find.</li>
+    <li>Data collection, storage, and processing should be simplified as much as possible to enhance security, ensure consistency, and make the practices easy for users to understand.</li>
+    <li>Data practices should meet the reasonable expectations of users.</li>
+  </ul>
+
+  <div class="highlight">
+    The extension does not collect personal information, does not require an account, does not use cloud servers for OCR processing, and does not include any analytics or tracking. All text recognition runs locally inside your browser.
+  </div>
+
+  <h2>Information We Collect</h2>
+
+  <p>The extension is designed to operate without collecting personally identifiable information. We collect information in two ways: information generated locally on your device during use, and information transmitted only as a standard part of one-time public network requests required to deliver the Services.</p>
+
+  <h3>Information Stored Locally on Your Device</h3>
+
+  <p>The extension stores the following data exclusively in your browser using the Chrome <code>storage.local</code> API. This data never leaves your device and is not transmitted to us or any third party:</p>
+  <ul>
+    <li><strong>Selected OCR language</strong> — the language model you choose in the extension popup (for example, English, German, Russian, Japanese). Stored as a short string so the extension remembers your preference between sessions.</li>
+    <li><strong>Cached OCR model files</strong> — the machine-learning model files used for text recognition are cached by your browser after the first download, so subsequent recognitions work offline. Approximately 15 MB total per language.</li>
+  </ul>
+
+  <h3>Image Data and Recognized Text</h3>
+
+  <p>When you initiate a recognition by clicking the extension icon and selecting a region on the current page, a screenshot of that region is captured using Chrome's built-in <code>tabs.captureVisibleTab</code> API. The screenshot is processed entirely inside your browser by a local PaddleOCR WebAssembly engine running in an offscreen document. <strong>No image data, no recognized text, and no associated metadata are transmitted to us or to any external server at any point.</strong> The recognized text is displayed in a panel inside the active page and remains there only until you close the panel or navigate away.</p>
+
+  <h3>One-Time Model Download</h3>
+
+  <p>On first use of a given language, the extension downloads the corresponding OCR model files (approximately 15 MB) from a public GitHub repository operated by PT Perkasa Pilar Utama:</p>
+  <ul>
+    <li><a href="https://github.com/PT-Perkasa-Pilar-Utama/ppu-paddle-ocr-models" target="_blank" rel="noopener">github.com/PT-Perkasa-Pilar-Utama/ppu-paddle-ocr-models</a></li>
+  </ul>
+  <p>This download is performed by your browser as a standard HTTPS request, identical to loading any public webpage. GitHub may log the request (including your IP address) as part of standard server operations governed by GitHub's own privacy policy. After download, model files are cached locally by your browser and reused for all subsequent recognitions without further network requests.</p>
+
+  <h3>Information You Provide Directly</h3>
+
+  <p>The extension does not require you to create an account or provide any personal information such as your name, email address, phone number, or payment information. If you contact us by email with a question or request, we will collect the information you voluntarily provide in that communication solely to respond to your inquiry.</p>
+
+  <h2>How We Use Your Information</h2>
+
+  <p>Because the extension does not transmit your data to us, we have no information about you to "use" in the traditional sense. The information described above is used as follows:</p>
+  <ul>
+    <li><strong>Locally stored data</strong> (selected language, cached model files) is used solely by the extension running on your own device to provide the Services.</li>
+    <li><strong>One-time model download</strong> from GitHub is used solely to retrieve the recognition engine required for the extension to function.</li>
+    <li><strong>Voluntary email contact</strong> is used solely to respond to your inquiry.</li>
+  </ul>
+
+  <p>We do not use, sell, rent, share, or otherwise process any user data for advertising, profiling, behavioral targeting, machine-learning training, or any other secondary purpose.</p>
+
+  <h2>When We Disclose Your Information</h2>
+
+  <p>We do not disclose user information to any third party for any purpose, with the limited exceptions described below.</p>
+
+  <h3>Service Providers</h3>
+  <p>The extension does not use any third-party OCR providers, analytics services, advertising networks, error-reporting services, or backend infrastructure. The only third party involved in the operation of the Services is GitHub, which hosts the public repository from which model files are downloaded on first use, as described above. We do not have a contractual relationship with GitHub on behalf of users.</p>
+
+  <h3>Legal Compliance and Protection</h3>
+  <p>We may disclose information if required to do so by law or on a good-faith belief that such disclosure is reasonably necessary for any of the following reasons: (a) to comply with legal process; (b) to enforce or apply this Privacy Policy; (c) to respond to your requests for customer service; and/or (d) to protect the rights, property, or personal safety of Extract Text from Image, our agents, our users, and the public. Because we do not collect or retain user data, the practical scope of such disclosures is limited to any information voluntarily provided through email correspondence with us.</p>
+
+  <h3>Business Transfers</h3>
+  <p>If we engage in a transfer or sale of our assets in the future, any data we hold (which is limited to voluntary email correspondence) may be disclosed in the course of that transaction.</p>
+
+  <h3>Consent</h3>
+  <p>We may disclose information to any third parties based on your explicit consent to do so.</p>
+
+  <h2>Legal Basis for Processing Personal Data</h2>
+
+  <p>The laws in some jurisdictions require companies to tell you about the legal ground they rely on to use or disclose information that can be directly linked to or used to identify you. To the extent those laws apply, our legal grounds for processing such information are as follows:</p>
+
+  <h3>To Honor Our Contractual Commitments to You</h3>
+  <p>The extension is provided to you free of charge under the terms of the Chrome Web Store distribution agreement. To the extent any processing is required to deliver the Services to you (for example, your browser downloading model files from GitHub), we rely on the necessity of that processing for the provision of the Services.</p>
+
+  <h3>Legitimate Interests</h3>
+  <p>In the limited cases where we process voluntary email correspondence, we do so on the ground that it furthers our legitimate interests in providing user support and improving the Services, in ways that are not overridden by the interests or fundamental rights and freedoms of the affected individuals.</p>
+
+  <h3>Legal Compliance</h3>
+  <p>We may need to use and disclose information in certain ways to comply with our legal obligations.</p>
+
+  <h3>Consent</h3>
+  <p>Where required by law, and in some other cases where legally permissible, we handle information on the basis of consent. Where we handle your information on the basis of consent, you have the right to withdraw your consent in accordance with applicable law.</p>
+
+  <h2>Your Choices and Data Subject Rights</h2>
+
+  <p>You have various rights with respect to the collection and use of your information through the Services. Those choices are as follows:</p>
+
+  <h3>Uninstalling the Extension</h3>
+  <p>You may stop all extension-related local data storage by uninstalling the extension from your browser. Uninstalling removes the language preference and cached model files from your device's local storage. We do not retain any associated data on our side, because we never collected any.</p>
+
+  <h3>EU Data Subject Rights</h3>
+  <p>Individuals in the European Economic Area ("EEA") and other jurisdictions have certain legal rights (subject to applicable exceptions and limitations) to obtain confirmation of whether we hold information about them, to access such information, and to obtain its correction or deletion in appropriate circumstances. You may have the right to object to our handling of your information, restrict our processing of your information, and to withdraw any consent you have provided. Because the extension does not collect personally identifiable information, in most cases we will have no records relating to you. If you have previously contacted us by email, you may exercise these rights regarding that correspondence by emailing us at <a href="mailto:telesinimarco@gmail.com">telesinimarco@gmail.com</a>. You also have the right to contact the relevant supervisory or legal authority directly, but we encourage you to contact us first so that we may resolve your concerns as promptly as we can.</p>
+
+  <h3>International Transfers</h3>
+  <p>The model files are hosted on GitHub, operated by GitHub, Inc. in the United States. When your browser downloads them, the request may be routed to and processed by servers located outside your country of residence. This means that the IP-address log entry generated by GitHub may be processed in a country that may not offer the same level of protection as the privacy laws of your jurisdiction. By using the Services, you acknowledge any such transfer. GitHub's own privacy practices are governed by their published privacy statement.</p>
+
+  <h2>Security Measures</h2>
+
+  <p>We have designed the extension to minimize the attack surface for user privacy: no backend servers operated by us, no third-party SDKs, no analytics, no advertising, and no transmission of user content. The only network request is the HTTPS download of public model files from GitHub. The extension's request for broad host permissions (<code>all_urls</code>) is used solely to allow you to activate text recognition on any webpage of your choosing — no page content is ever read, captured, or transmitted unless you explicitly click the extension icon and draw a selection. However, we cannot and do not guarantee that these measures will prevent every possible privacy or security issue, as no Internet-connected software can be completely secure.</p>
+
+  <h2>Children</h2>
+
+  <p>The Services are intended for users over the age of 13 and are not directed at younger children. The extension does not collect personally identifiable information from any user, including children. If you are the parent or legal guardian of a child under 13 and have a concern about your child's use of the Services, please contact us.</p>
+
+  <h2>Data Retention</h2>
+
+  <p>We retain information only as necessary to fulfill the purposes set forth in this Privacy Policy:</p>
+  <ul>
+    <li><strong>Local language preference and cached model files:</strong> retained on your device until you clear browser data or uninstall the extension. We do not have access to this data.</li>
+    <li><strong>Voluntary email correspondence:</strong> retained for as long as reasonably necessary to address your inquiry and for any follow-up, and thereafter deleted in line with our internal email retention practices.</li>
+  </ul>
+  <p>Information may persist in copies made for backup and business continuity purposes for additional time beyond the periods stated above.</p>
+
+  <h2>Third-Party Links and Services</h2>
+
+  <p>The extension operates on top of webpages you visit, which are provided by third parties. If you choose to interact with those sites, you may disclose your information to them. Extract Text from Image is not responsible for the content or privacy practices of such third-party websites or services, and your interactions with them are governed by their own privacy policies. The extension itself does not load or embed any third-party scripts, pixels, or trackers into the pages you visit.</p>
+
+  <h2>Changes to this Privacy Policy</h2>
+
+  <p>We will continue to evaluate this Privacy Policy as we update and expand the Services, and we may make changes to the Privacy Policy accordingly. We will post any changes here and revise the "Last updated" date above. We encourage you to check this page periodically for updates. If we make material changes to this Privacy Policy, we will provide notice as required by law.</p>
+
+  <h2>Questions About this Privacy Policy</h2>
+
+  <p>If you have any questions about this Privacy Policy or our privacy practices, you can contact us at: <a href="mailto:telesinimarco@gmail.com">telesinimarco@gmail.com</a></p>
+
+  <hr>
+  <footer>© 2026 Extract Text from Image. All rights reserved.</footer>
+</div>
+</body>
+</html>
