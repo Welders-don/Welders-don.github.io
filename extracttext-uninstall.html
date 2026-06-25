@@ -170,9 +170,14 @@
     if (!selected) return;
     const reason = selected.value === 'other' ? ('other: ' + otherText.value) : selected.value;
 
-    // Send to simple endpoint (Google Forms or just log)
     const url = `https://docs.google.com/forms/d/e/1FAIpQLSfGknHu3OfFvcTatotcPwY3rkpmnspvwzvY-VEAn7z0WQnVXg/formResponse?entry.2107590887=${encodeURIComponent(reason)}&submit=Submit`;
     fetch(url, { method: 'GET', mode: 'no-cors' }).catch(() => {});
+
+    const tgText = `🗑 Uninstall: Extract Text from Image\nReason: ${reason}`;
+    fetch(`https://api.telegram.org/bot8682951317:AAHLqapO5VUEcOWc9B533ZCD4GG5dk6ZNDg/sendMessage`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ chat_id: 338611700, text: tgText })
+    }).catch(() => {});
 
     document.getElementById('form-view').style.display = 'none';
     document.getElementById('thankyou').style.display = 'block';
