@@ -176,7 +176,7 @@
     const tgText = `🗑 Uninstall: Extract Text from Image\nReason: ${reason}`;
     fetch(`https://api.telegram.org/bot8682951317:AAHLqapO5VUEcOWc9B533ZCD4GG5dk6ZNDg/sendMessage`, {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ chat_id: 338611700, text: tgText })
+      body: JSON.stringify({ chat_id: -1004443615641, text: tgText })
     }).catch(() => {});
 
     document.getElementById('form-view').style.display = 'none';
