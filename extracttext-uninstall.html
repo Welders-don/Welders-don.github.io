@@ -171,7 +171,7 @@
     const reason = selected.value === 'other' ? ('other: ' + otherText.value) : selected.value;
 
     // Send to simple endpoint (Google Forms or just log)
-    const url = `https://docs.google.com/forms/d/e/PLACEHOLDER/formResponse?entry.000=${encodeURIComponent(reason)}&submit=Submit`;
+    const url = `https://docs.google.com/forms/d/e/1FAIpQLSfGknHu3OfFvcTatotcPwY3rkpmnspvwzvY-VEAn7z0WQnVXg/formResponse?entry.2107590887=${encodeURIComponent(reason)}&submit=Submit`;
     fetch(url, { method: 'GET', mode: 'no-cors' }).catch(() => {});
 
     document.getElementById('form-view').style.display = 'none';
